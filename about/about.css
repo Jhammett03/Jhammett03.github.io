@@ -231,7 +231,6 @@
     background-color: #141414;
     z-index: 1;
     width: 100%;
-    max-width: 1920px;
     padding: 0 50px;
 }
 
@@ -421,6 +420,7 @@
     justify-content:center;
     flex-direction:row;
     flex-wrap:wrap; 
+    height: max-content;
     
 }
 
@@ -437,6 +437,8 @@
     position:relative;
     color: #fff;
     transition:all .2s ease-in-out;
+    padding: 10px;
+    margin-bottom: 10%;
 }
 
 .personal:hover, .education:hover, .experience:hover{
@@ -452,7 +454,6 @@
 .services__card p {
     position:absolute;
     top: 400px;
-    left: 30px;
 }
 
 .services__card button {
@@ -491,6 +492,7 @@
     color: #fff;
     text-decoration:none;
 }
+
 
 .services__card button:hover {
     color: #fff; 
@@ -719,13 +721,21 @@
     }
   }
 
-  .about__me {
-    height: 50vh;
+  .about {
     background: #141414;
+    display: flex;
+    width:auto;
+    height: auto;
     align-items: center;
-    display:flex;
-    justify-content: center;
-    flex-direction: row;
+    justify-content: center; /* Center horizontally */
+    flex-direction: column; /* Stack items vertically */
+  }
+
+  .about__me {
+    display: flex;
+    justify-content:center;
+    flex-direction:row;
+    flex-wrap:wrap; 
   }
 
 
@@ -749,7 +759,7 @@
   .about__me p {
     color: #fff;
     max-width: 400px;
-    margin: 10px ;
+    border-spacing: 10px ;
   }
 
   
