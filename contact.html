@@ -16,21 +16,20 @@
         <main>
             <h1>Contact</h1>
             <div class="contact">
-                    <div class="contact-image"></div>
-                    <div class="contact-text">
-                <p>This is a sentence!</p>
-                <p>Hi, My Name is Jared Hammett, and I am a software engineer Passionate about <em>Front-End Development and Cybersecurity</em>. </p>
-                <p>What truly drives me is the opportunity to learn and grow. I have a passion for learning new things and I am always looking 
-                    for opportunities to improve my skills!</p>
-                <p>I am currently in my second year at Cal Poly San Luis Obispo pursuing a B.S. in Computer Science with a minor in Accounting. At Cal Poly, I am an 
-                    <strong>Instructional Student Aid</strong>
-                    in low level computer science courses, as well as a member of the Cal Poly Triathlon Team</p>
-                    </div>
+                <form id="contact-form">
+                   <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Name" required />
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Email" required />
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" placeholder="Message" required></textarea>
+                    <input type="submit" id="submit" name="submit" value="Submit" />
+                </form>
+
+
             </div>
-        </main>
-        <footer class="footer">
-            © 2023 Jared Hammett | All Rights Reserved
-        </footer>
+
+            
 
 
     </body>
