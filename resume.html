@@ -1,22 +1,54 @@
 <!DocType html>
 <html>
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Jared's Website | Resume </title>
+        <link rel="stylesheet" href="resume.css">
+        <script src="https://kit.fontawesome.com/ab74e91db0.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+
     <body>   
         <nav class="navbar">
-            <h1 class="logo"><a href="index.html">Jared Hammett</a></h1>
-            <ul class="nav-list">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+            <div class="navbar__container">
+                <a href="main.html" id="navbar__logo"><i class="fa-solid fa-code"></i>&nbsp;<b>&nbsp;Jared Hammett</b></a>
+                <div class="navbar__toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="navbar__menu">
+                    <li class="navbar__item">
+                        <a href="main.html" class="navbar__links">
+                            Home
+                        </a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="about/about.html" class="navbar__links">
+                            About
+                        </a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="resume.html" class="navbar__links">
+                            Resume
+                        </a>
+                    </li>
+                    <li class="navbar__btn">
+                        <a href="projects/projects.html" class="button">
+                            Projects
+                        </a>
+                    </li>
+                </ul>
+            </div> 
         </nav>
         <main>
             <h1 class="page-title">Resume</h1>
-            <a href="resume.pdf" download >Download Resume</a>
+            <img src="./images/undraw_resume_re_hkth.svg" alt="">
+            <a href="JaredHammettResume.pdf" download ><h2>Download Resume!</h2></a>
             <div class="resume">
+                
                 <section><h2 class="Education">Education</h2>
                 <div class="entry">
                     <h3 class="entry-title">Bachelor of Science in Computer Science with a Minor in Accounting</h3>
@@ -77,6 +109,30 @@
             
         </main>
         <footer class="footer">
+            <!-- Footer Section-->
+<div class="footer__container">
+    <div class="footer__links">
+        <div class="footer__link--wrapper">
+            
+           <div class="footer__logo">
+                <a href="/" id="footer__logo"><i class="fa-solid fa-code"></i>&nbsp;<b>&nbsp;Jared Hammett</b></a>
+            </div> 
+            
+            <div class="social__icons">
+                <div class="social__icon--link">
+                    <a id="email__logo" href="mailto:jaredhammett452@gmail.com" ><i id="email__logo" class="fa-solid fa-envelope"></i></a>
+                    <a href="https://www.linkedin.com/in/jared-hammett-656250282/"><i id="linkedin__logo"class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://app.joinhandshake.com/stu/users/42955541"><i id="handshake__logo"class="fa-regular fa-handshake"></i></a>
+                    <a href="https://github.com/Jhammett03"><i id="github__logo"class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+    <script src="about.js"></script>
+</body>
             © 2023 Jared Hammett | All Rights Reserved
         </footer>
 

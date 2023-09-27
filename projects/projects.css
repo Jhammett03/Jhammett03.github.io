@@ -5,9 +5,6 @@
     font-family: 'Kumbh Sans', sans-serif;
 }
 
-html {
-    background-color: #141414;
-}
 .navbar {
     background: #131313;
     height: 80px;
@@ -220,21 +217,30 @@ html {
 /* Hero Section CSS */
 .main {
     background-color: #14141414;
+    width: 100%;
 
 }
 
 .main__container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
     align-items: center;
     justify-self: center;
     margin: 0 auto;
-    height: 90vh;
+    height: 40vh;
     background-color: #141414;
     z-index: 1;
-    width: 100%;
+    width: auto;
     max-width: 1920px;
     padding: 0 50px;
+}
+
+.main__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
 }
 
 .main__content h1 {
@@ -246,6 +252,7 @@ html {
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
+    margin-bottom: 1rem;
 }
 
 .main__content h2 {
@@ -253,7 +260,7 @@ html {
     background-color: #6299ff;
     background-image: linear-gradient(to top, #b721ff 0%, #21d4fd 100%);
     background-size: 100%;
-    margin-bottom: none;
+    margin-bottom: 1rem;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -261,10 +268,10 @@ html {
 }
 
 .main__content p {
-    margin-top: none;
     font-size: 2rem;
     font-weight: 700;
     color: #fff;
+    margin-bottom: 1rem;
 }
 
 .main__btn {
@@ -274,7 +281,7 @@ html {
     border: none;
     border-radius: 4px;
     color: #fff;
-    margin-top: 2rem;
+    margin-top: none;
     cursor: pointer;
     position: relative;
     transition: all 0.35s;
@@ -285,7 +292,7 @@ html {
     position: relative;
     z-index: 2;
     color: #fff;
-    text-decoration:none;
+    text-decoration: none;
 }
 
 .main__btn:after {
@@ -315,7 +322,11 @@ html {
 #main__img {
     height: 100%;
     width: 100%;
+    position: relative;
+    z-index: 1;
 }
+
+
 
 /* Mobile Responsive*/
 @media screen and (max-width: 768px) {
@@ -370,41 +381,6 @@ html {
     }
   }
 
-/* About Section CSS */
-.about {
-    text-align: center;
-    align-items: center;
-    background-color: #131313;
-    display: flex;
-    justify-content: center; /* Center horizontally */
-    margin-bottom: 10%;
-    
-}
-
-.about h1 {
-    font-size: 2.5rem;
-    background-image: linear-gradient(
-        to right,
-        #6299ff 0%,
-        #6da0ff 0%,
-        rgba(132, 34, 207, 0.6) 21%,
-        #6544dd 52%,
-        rgba(132, 34, 207, 0.6) 78%,
-        rgba(117, 65, 156, 0) 100%
-    );
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-    margin-bottom: 1.5rem; /* Adjust as needed */
-}
-
-.about p {
-    padding: 0 10%;
-    font-size: 1.5rem;
-    color: #fff;
-}
-
 /* Services Section Css */
 
 .services {
@@ -455,7 +431,7 @@ html {
         to bottom,
         rgba(0, 0, 0, 0) 0%,
         rgba(17, 17, 17, 0.6) 100%
-    ), url('images/pic2.jpg');
+    ), url('images/pic3.png');
     background-size: cover;
     position: relative;
     color: #fff;
@@ -466,8 +442,8 @@ html {
     background-image: linear-gradient(
         to bottom,
         rgba(0, 0, 0, 0) 0%,
-        rgba(17, 17, 17, 0.6) 100%
-    ), url('images/personal.jpeg');
+        rgba(56, 89, 139, 0.2) 100%
+    ), url('images/pic2.svg');
 }
 
 .services__card:nth-child(3) {
@@ -475,13 +451,14 @@ html {
         to bottom,
         rgba(0, 0, 0, 0) 0%,
         rgba(17, 17, 17, 0.6) 100%
-    ), url('images/pic4.jpg');
+    ), url(../images/OCTaxes-ss.png);
 }
 
 .services h2 {
     position: absolute;
     top: 10px;
-    left: 30px;
+    margin-left: auto;
+    margin-right: auto;
     background-color: #6299ff;
     background-image: linear-gradient(
         to right,
@@ -493,8 +470,8 @@ html {
         rgba(117, 65, 156, 0) 100%
     );
     background-size: 80%;
-    margin-bottom: 2rem; /* Adjust as needed */
-    font-size: 2.5rem;
+    margin-bottom: 1rem; /* Adjust as needed */
+    font-size: 2rem;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -523,6 +500,8 @@ html {
     font-size: 1rem;
     cursor: pointer;
 }
+
+
 
 .services__card button:after {
     position: absolute;
@@ -596,7 +575,7 @@ html {
 }
 
 .footer__container h2 {
-    align: center;
+    align-self: center;
     color: #21d4fd;
 }
 

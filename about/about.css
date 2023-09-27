@@ -1,13 +1,11 @@
 * {
+    
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: 'Kumbh Sans', sans-serif;
 }
 
-html {
-    background-color: #141414;
-}
 .navbar {
     background: #131313;
     height: 80px;
@@ -219,22 +217,31 @@ html {
 
 /* Hero Section CSS */
 .main {
+    display: flex;
     background-color: #14141414;
 
 }
 
 .main__container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
     align-items: center;
     justify-self: center;
     margin: 0 auto;
-    height: 90vh;
+    height: 25vh;
     background-color: #141414;
     z-index: 1;
     width: 100%;
     max-width: 1920px;
     padding: 0 50px;
+}
+
+.main__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
 }
 
 .main__content h1 {
@@ -246,6 +253,7 @@ html {
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
+    margin-bottom: 1rem;
 }
 
 .main__content h2 {
@@ -253,7 +261,7 @@ html {
     background-color: #6299ff;
     background-image: linear-gradient(to top, #b721ff 0%, #21d4fd 100%);
     background-size: 100%;
-    margin-bottom: none;
+    margin-bottom: 1rem;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -261,10 +269,10 @@ html {
 }
 
 .main__content p {
-    margin-top: none;
     font-size: 2rem;
     font-weight: 700;
     color: #fff;
+    margin-bottom: 1rem;
 }
 
 .main__btn {
@@ -274,7 +282,7 @@ html {
     border: none;
     border-radius: 4px;
     color: #fff;
-    margin-top: 2rem;
+    margin-top: none;
     cursor: pointer;
     position: relative;
     transition: all 0.35s;
@@ -285,7 +293,7 @@ html {
     position: relative;
     z-index: 2;
     color: #fff;
-    text-decoration:none;
+    text-decoration: none;
 }
 
 .main__btn:after {
@@ -315,7 +323,11 @@ html {
 #main__img {
     height: 100%;
     width: 100%;
+    position: relative;
+    z-index: 1;
 }
+
+
 
 /* Mobile Responsive*/
 @media screen and (max-width: 768px) {
@@ -370,41 +382,6 @@ html {
     }
   }
 
-/* About Section CSS */
-.about {
-    text-align: center;
-    align-items: center;
-    background-color: #131313;
-    display: flex;
-    justify-content: center; /* Center horizontally */
-    margin-bottom: 10%;
-    
-}
-
-.about h1 {
-    font-size: 2.5rem;
-    background-image: linear-gradient(
-        to right,
-        #6299ff 0%,
-        #6da0ff 0%,
-        rgba(132, 34, 207, 0.6) 21%,
-        #6544dd 52%,
-        rgba(132, 34, 207, 0.6) 78%,
-        rgba(117, 65, 156, 0) 100%
-    );
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-    margin-bottom: 1.5rem; /* Adjust as needed */
-}
-
-.about p {
-    padding: 0 10%;
-    font-size: 1.5rem;
-    color: #fff;
-}
-
 /* Services Section Css */
 
 .services {
@@ -438,69 +415,39 @@ html {
     text-align: center;
 }
 
-.services__container {
+.about__me {
+    background: #141414;
     display: flex;
-    justify-content:;
+    justify-content:center;
     flex-direction:row;
     flex-wrap:wrap; 
+    
 }
 
 
-.services__card {
-    margin: 1rem;
-    height: 525px;
-    width: 400px;
-    border-radius: 4px;
+.personal, .education, .experience {
+    border-radius: 15px;
+    margin: 10px;
     background-image: linear-gradient(
         to bottom,
         rgba(0, 0, 0, 0) 0%,
-        rgba(17, 17, 17, 0.6) 100%
-    ), url('images/pic2.jpg');
-    background-size: cover;
-    position: relative;
+        rgba(56, 89, 139, 0.2) 100%
+    );
+    background-size: contain;
+    position:relative;
     color: #fff;
     transition:all .2s ease-in-out;
 }
 
-.services__card:nth-child(2) {
-    background-image: linear-gradient(
-        to bottom,
-        rgba(0, 0, 0, 0) 0%,
-        rgba(17, 17, 17, 0.6) 100%
-    ), url('images/personal.jpeg');
+.personal:hover, .education:hover, .experience:hover{
+    transform: scale(1.075);
+    transition: 0.2s ease-in;
 }
 
-.services__card:nth-child(3) {
-    background-image: linear-gradient(
-        to bottom,
-        rgba(0, 0, 0, 0) 0%,
-        rgba(17, 17, 17, 0.6) 100%
-    ), url('images/pic4.jpg');
-}
 
-.services h2 {
-    position: absolute;
-    top: 10px;
-    left: 30px;
-    background-color: #6299ff;
-    background-image: linear-gradient(
-        to right,
-        #6299ff 0%,
-        #6da0ff 0%,
-        rgba(132, 34, 207, 0.6) 21%,
-        #6544dd 52%,
-        rgba(132, 34, 207, 0.6) 78%,
-        rgba(117, 65, 156, 0) 100%
-    );
-    background-size: 80%;
-    margin-bottom: 2rem; /* Adjust as needed */
-    font-size: 2.5rem;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-    text-align: center;
-}
+
+
+
 
 .services__card p {
     position:absolute;
@@ -523,6 +470,8 @@ html {
     font-size: 1rem;
     cursor: pointer;
 }
+
+
 
 .services__card button:after {
     position: absolute;
@@ -585,6 +534,7 @@ html {
 .footer__container {
     background-color: #141414;
     padding: 5rem 0;
+    height: 40vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -596,11 +546,12 @@ html {
 }
 
 .footer__container h2 {
-    align: center;
+    align-self: center;
     color: #21d4fd;
 }
 
 #footer__logo {
+    margin-top: 100vh;
     background-color: #6299ff;
     background-image: linear-gradient(to top, #ffb199 100% );
     background-size: 100%;
@@ -767,3 +718,38 @@ html {
       width: 100%;
     }
   }
+
+  .about__me {
+    height: 50vh;
+    background: #141414;
+    align-items: center;
+    display:flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+
+  
+
+  .about__me h2 {
+    margin: 4px;
+    justify-content: center;
+    align-self: center;
+    font-size: 2rem;
+    background-color: #6299ff;
+    background-image: linear-gradient(to top, #ffb199 100% );
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    text-align: center;
+  }
+
+  .about__me p {
+    color: #fff;
+    max-width: 400px;
+    margin: 10px ;
+  }
+
+  
