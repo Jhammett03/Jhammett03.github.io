@@ -842,14 +842,7 @@ section {
     opacity: 0;
     transition: all 3s;
   }
-
-  .hiddenSlideInRight {
-    animation-name: slideInRight;
-    animation-duration: 2s;
-    opacity: 0;
-    transition: all 3s;
-  }
-
+  
   .show {
     opacity: 1;
   }
@@ -873,10 +866,4 @@ section {
     display: flex;
   }
 
-  .slideInRight:nth-child(2) {
-    transition-delay:0.5s;
-  }
-
-    .slideInRight:nth-child(3) {
-        transition-delay: 1s;
-    }
+  
