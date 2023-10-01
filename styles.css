@@ -25,6 +25,9 @@ html {
 
 }
 
+section {
+    display: grid;
+}
 .navbar__container {
     display: flex;
     justify-content: space-between;
@@ -233,7 +236,7 @@ html {
     align-items: center;
     justify-self: center;
     margin: 0 auto;
-    height: 90vh;
+    height: 100vh;
     background-color: #141414;
     z-index: 1;
     width: 100%;
@@ -810,3 +813,70 @@ html {
         transform: translateY(0);
     }
   }
+
+  @keyframes phaseIn {
+    from {
+        transform: opacity(0);
+    }
+    to {
+        transform: opacity(1);
+    }
+  }
+
+  .slideInLeft {
+    animation-name: slideInLeft;
+    animation-duration: 2s;
+  }
+
+  .slideInRight {
+    animation-name: slideInLeft;
+    animation-duration: 2s;
+  }
+
+  .slideInDown {
+    animation-name: slideInLeft;
+    animation-duration: 2s;
+  }
+
+  .hidden {
+    opacity: 0;
+    transition: all 3s;
+  }
+
+  .hiddenSlideInRight {
+    animation-name: slideInRight;
+    animation-duration: 2s;
+    opacity: 0;
+    transition: all 3s;
+  }
+
+  .show {
+    opacity: 1;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .slideInLeft {
+      animation: none;
+    }
+    .slideInRight {
+      animation: none;
+    }
+    .slideInDown {
+      animation: none;
+    }
+    .hidden {
+        transition: none;
+    }
+  }
+
+  .services__container {
+    display: flex;
+  }
+
+  .slideInRight:nth-child(2) {
+    transition-delay:0.5s;
+  }
+
+    .slideInRight:nth-child(3) {
+        transition-delay: 1s;
+    }
