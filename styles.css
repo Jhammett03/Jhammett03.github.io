@@ -5,10 +5,14 @@
     font-family: 'Kumbh Sans', sans-serif;
 }
 
+
+  
 html {
     background-color: #141414;
 }
 .navbar {
+    animation-name: slideInDown;
+    animation-duration: 2s;
     background: #131313;
     height: 80px;
     display: flex;
@@ -237,6 +241,11 @@ html {
     padding: 0 50px;
 }
 
+.main__content {
+    animation-name: slideInLeft;
+    animation-duration: 2s;
+}
+
 .main__content h1 {
     font-size: 3rem;
     background-color: #6299ff;
@@ -310,6 +319,8 @@ html {
 
 .main__img--container {
     text-align: center;
+    animation-name: slideInRight;
+    animation-duration: 2s;
 }
 
 #main__img {
@@ -589,6 +600,7 @@ html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 0, auto;
 }
 .footer__container footer__link--items {
     display: flex;
@@ -596,11 +608,13 @@ html {
 }
 
 .footer__container h2 {
-    align: center;
+    text-align: center;
     color: #21d4fd;
 }
 
 #footer__logo {
+    padding: 0, auto;
+    text-align: center;
     background-color: #6299ff;
     background-image: linear-gradient(to top, #ffb199 100% );
     background-size: 100%;
@@ -613,7 +627,9 @@ html {
     cursor: pointer;
     text-decoration: none;
     font-size: 2rem;
-    margin-top: 20px
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .footer__links {
@@ -765,5 +781,32 @@ html {
       margin: 0;
       padding: 10px;
       width: 100%;
+    }
+  }
+
+  @keyframes slideInLeft {
+    from {
+        transform: translateX(-300px);
+    }
+    to {
+        transform: translateX(0);
+    }
+  }
+
+  @keyframes slideInRight {
+    from {
+        transform: translateX(300px);
+    }
+    to {
+        transform: translateX(0);
+    }
+  }
+
+  @keyframes slideInDown {
+    from {
+        transform: translateY(-100px);
+    }
+    to {
+        transform: translateY(0);
     }
   }
