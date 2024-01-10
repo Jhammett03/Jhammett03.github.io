@@ -119,12 +119,10 @@ section {
 
 @media screen and (max-width: 960px) {
     .navbar__container {
-        display: flex;
-        justify-content: space-between;
         height: 80px;
         z-index: 1;
         width: 100%;
-        max-width: 1300px;
+        max-width: 1200px;
         padding: 0;
     }
 
@@ -135,13 +133,13 @@ section {
         width: 100%;
         position: absolute;
         top: -1000px;
-        opacity: 1;
         transition: all 0.5s ease;
         height: 50vh;
-        z-index: -1;
     }
 
     .navbar__menu.active {
+        margin-left: -10%;
+        width: 100%;
         background: #131313;
         top: 100%;
         opacity: 1;
@@ -152,7 +150,8 @@ section {
     }
 
     #navbar__logo {
-        padding-left: 25px;
+        justify-content: baseline;
+        margin-left: 0px;
     }
 
     .navbar__toggle .bar {
@@ -178,7 +177,7 @@ section {
     }
 
     #mobile-menu {
-        position: absolute;
+
         top: 20%;
         right: 5%;
         transform: translate(5%, 20%);
@@ -187,7 +186,6 @@ section {
     .navbar__btn {
         padding-bottom: 2rem;
     }
-
 
     .button {
         display: flex;
@@ -230,7 +228,7 @@ section {
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 30px) {
     .navbar__container {
         display: flex;
         justify-content: space-between;
