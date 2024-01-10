@@ -7,6 +7,7 @@
 
 html {
     background-color: #141414;
+    scroll-behavior: smooth;
 }
 
 .navbar {
@@ -224,13 +225,21 @@ html {
 main {
     margin: 0;
     align-items: center; 
+    justify-content: center;
     text-align: center;
     background-color: #14141414;
     width: 100%;
 
 }
 
+.resume{
+    animation: slideInUp;
+    animation-duration: 2s;
+}
+
 img {
+    animation: slideInDown;
+    animation-duration: 2s;
     display: block;
     scale: 75%;
     margin: auto;
@@ -238,6 +247,8 @@ img {
   
 
  .page-title {
+    animation: slideInDown;
+    animation-duration: 2s;
     font-size: 3rem;
     background-color: #6299ff;
     background-image: linear-gradient(to top, #6299ff 0%, #21d4fd 100%);
@@ -254,17 +265,21 @@ img {
 }
 
 main button {
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
-    height: 40px;
-    background-color: rgba(38, 140, 153, 0);
-    padding: 0px 10px;
-    border-radius: 10px;
-    border-color: #21d4fd;
-    margin: 20px;
+    margin-bottom:70px;
+    height: 75px;
+    width: 25%;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #f77062;
+    color: #fff;
 }
 
 main button:hover {
-    background: rgba(38, 140, 153, 0.4);
+    background: #4837ff;
     transition: all 0.3s ease;
     cursor: pointer;
 }
@@ -272,7 +287,7 @@ main button:hover {
 main h2 {
     font-size: 2rem;
     background-color: #fff;
-    background-image: linear-gradient(to top, #6299ff 0%, #21d4fd 100%);
+    justify-content: center;
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -481,3 +496,62 @@ main h3, ul {
     }
   }
 
+  @keyframes slideInLeft {
+    from {
+        transform: translateX(-300px);
+    }
+    to {
+        transform: translateX(0);
+    }
+  }
+
+  @keyframes slideInRight {
+    from {
+        transform: translateX(300px);
+    }
+    to {
+        transform: translateX(0);
+    }
+  }
+
+  @keyframes slideInDown {
+    from {
+        transform: translateY(-100px);
+    }
+    to {
+        transform: translateY(0);
+    }
+  }
+
+  @keyframes slideInUp {
+    from {
+        transform: translateY(500px);
+    }
+    to {
+        transform: translateY(0);
+    }
+  }
+
+  @keyframes phaseIn {
+    from {
+        transform: opacity(0);
+    }
+    to {
+        transform: opacity(1);
+    }
+  }
+
+  .slideInLeft {
+    animation-name: slideInLeft;
+    animation-duration: 2s;
+  }
+
+  .slideInRight {
+    animation-name: slideInLeft;
+    animation-duration: 2s;
+  }
+
+  .slideInDown {
+    animation-name: slideInLeft;
+    animation-duration: 2s;
+  }

@@ -5,6 +5,10 @@
     font-family: 'Kumbh Sans', sans-serif;
 }
 
+html{
+    background-color: #131313;
+    scroll-behavior: smooth;
+}
 .navbar {
     background: #131313;
     height: 80px;
@@ -233,6 +237,8 @@
 }
 
 .main__content {
+    animation-name: slideInDown;
+    animation-duration: 2s;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -382,6 +388,8 @@
 /* Services Section Css */
 
 .services {
+    animation-name: slideInUp;
+    animation-duration: 2s;
     background: #141414;
     display: flex;
     width:auto;
@@ -478,6 +486,7 @@
 }
 
 .services__card p {
+    background: none;
     position:absolute;
     top: 400px;
     left: 30px;
@@ -514,6 +523,7 @@
 }
 
 .services__card a {
+    background: none;
     position: relative;
     z-index: 2;
     color: #fff;
@@ -743,4 +753,64 @@
       padding: 10px;
       width: 100%;
     }
+  }
+
+  @keyframes slideInLeft {
+    from {
+        transform: translateX(-300px);
+    }
+    to {
+        transform: translateX(0);
+    }
+  }
+
+  @keyframes slideInRight {
+    from {
+        transform: translateX(300px);
+    }
+    to {
+        transform: translateX(0);
+    }
+  }
+
+  @keyframes slideInDown {
+    from {
+        transform: translateY(-100px);
+    }
+    to {
+        transform: translateY(0);
+    }
+  }
+
+  @keyframes slideInUp {
+    from {
+        transform: translateY(500px);
+    }
+    to {
+        transform: translateY(0);
+    }
+  }
+
+  @keyframes phaseIn {
+    from {
+        transform: opacity(0);
+    }
+    to {
+        transform: opacity(1);
+    }
+  }
+
+  .slideInLeft {
+    animation-name: slideInLeft;
+    animation-duration: 2s;
+  }
+
+  .slideInRight {
+    animation-name: slideInLeft;
+    animation-duration: 2s;
+  }
+
+  .slideInDown {
+    animation-name: slideInLeft;
+    animation-duration: 2s;
   }
