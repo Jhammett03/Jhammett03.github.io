@@ -5,12 +5,14 @@
     font-family: 'Kumbh Sans', sans-serif;
 }
 
+
+  
 html {
     background-color: #141414;
-    scroll-behavior: smooth;
 }
-
 .navbar {
+    animation-name: slideInDown;
+    animation-duration: 2s;
     background: #131313;
     height: 80px;
     display: flex;
@@ -23,14 +25,18 @@ html {
 
 }
 
+section {
+    display: grid;
+}
 .navbar__container {
     display: flex;
     justify-content: space-between;
     height: 80px;
     z-index: 1;
     width: 100%;
-    margin-right: 10%;
-    padding-right: 100px;
+    margin-right: 1vw;
+    margin-left: 52px;
+    padding-right: 0px;
     padding-left: 0px;
 }
 
@@ -47,7 +53,13 @@ html {
     cursor: pointer;
     text-decoration: none;
     font-size: 2rem;
+}
 
+#navbar_pic{
+    scale: 0.2;
+    margin-right: 0;
+    padding: none;
+    display: flex;
 }
 
 .fa-gem {
@@ -113,6 +125,117 @@ html {
 
 @media screen and (max-width: 960px) {
     .navbar__container {
+        height: 80px;
+        z-index: 1;
+        width: 100%;
+        max-width: 1200px;
+        padding: 0;
+    }
+
+    .navbar__menu {
+        display: grid;
+        grid-template-columns: auto;
+        margin: 0;
+        width: 100%;
+        position: absolute;
+        top: -1000px;
+        transition: all 0.5s ease;
+        height: 50vh;
+    }
+
+    .navbar__menu.active {
+        margin-left: -10%;
+        width: 100%;
+        background: #131313;
+        top: 100%;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: 99;
+        height: 50vh;
+        font-size: 1.6rem;
+    }
+
+    #navbar__logo {
+        justify-content: baseline;
+        margin-left: 0px;
+    }
+
+    .navbar__toggle .bar {
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        transition: all 0.3s ease-in-out;
+        background: #fff;
+    }
+    .navbar__toggle .bar {
+        transition-duration: 0.5s;
+      }
+
+    .navbar__item { 
+        width: 100%;
+    }
+
+    .navbar__links {
+        text-align: center;
+        padding: 2rem;
+        width: 100%;
+        display: table;
+    }
+
+    #mobile-menu {
+
+        top: 20%;
+        right: 5%;
+        transform: translate(5%, 20%);
+    }
+
+    .navbar__btn {
+        padding-bottom: 2rem;
+    }
+
+    .button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        height: 80px;
+        margin: 0;
+    }
+
+    #mobile-menu {
+        position: absolute;
+        top: 20%;
+        right: 5%;
+        transform: translate(5%, 20%);
+      }
+
+    .navbar__toggle .bar{
+        display: block;
+        cursor: pointer;
+    }
+
+    #mobile-menu.is-active .bar:nth-child(2) {
+        transition: all 0.5s ease;
+        opacity: 0;
+    }
+    #mobile-menu.is-active .bar:nth-child(1) {
+        transition: all 0.5s ease;
+        transform: translateY(8px) rotate(45deg);
+    }
+    #mobile-menu.is-active .bar:nth-child(3) {
+        transition: all 0.5s ease;
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
+@media screen and (max-width: 450px) {
+    #navbar__logo {
+        scale: 0.7;
+        padding-left: 0;
+    }
+}
+
+@media screen and (max-width: 30px) {
+    .navbar__container {
         display: flex;
         justify-content: space-between;
         height: 80px;
@@ -143,10 +266,6 @@ html {
         z-index: 99;
         height: 50vh;
         font-size: 1.6rem;
-    }
-
-    #navbar__logo {
-        padding-left: 25px;
     }
 
     .navbar__toggle .bar {
@@ -190,33 +309,6 @@ html {
         width: 80%;
         height: 80px;
         margin: 0;
-    }
-
-    
-
-    #mobile-menu {
-        position: absolute;
-        top: 20%;
-        right: 5%;
-        transform: translate(5%, 20%);
-      }
-
-    .navbar__toggle .bar{
-        display: block;
-        cursor: pointer;
-    }
-
-    #mobile-menu.is-active .bar:nth-child(2) {
-        transition: all 0.5s ease;
-        opacity: 0;
-    }
-    #mobile-menu.is-active .bar:nth-child(1) {
-        transition: all 0.5s ease;
-        transform: translateY(8px) rotate(45deg);
-    }
-    #mobile-menu.is-active .bar:nth-child(3) {
-        transition: all 0.5s ease;
-        transform: translateY(-8px) rotate(-45deg);
     }
 }
 
