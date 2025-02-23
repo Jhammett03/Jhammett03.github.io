@@ -548,6 +548,19 @@ section {
         to bottom,
         rgba(0, 0, 0, 0) 0%,
         rgba(17, 17, 17, 0.6) 100%
+    ), url('images/icon.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: #fff;
+    transition:all .2s ease-in-out;
+}
+
+.services__card:nth-child(3) {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(17, 17, 17, 0.6) 100%
     ), url('images/Djkstra-thumbnail.png');
     background-size: cover;
     position: relative;
@@ -555,7 +568,7 @@ section {
     transition:all .2s ease-in-out;
 }
 
-.services__card:nth-child(3) {
+.services__card:nth-child(4) {
     background-image: linear-gradient(
         to bottom,
         rgba(0, 0, 0, 0) 0%,
@@ -566,7 +579,7 @@ section {
     background-position: center; /* Shift the image down by 50px */
 }
 
-.services__card:nth-child(4) {
+.services__card:nth-child(5) {
     background-image: linear-gradient(
         to bottom,
         rgba(0, 0, 0, 0) 0%,
@@ -577,7 +590,7 @@ section {
     background-position: center; /* Shift the image down by 50px */
 }
 
-.services__card:nth-child(5) {
+.services__card:nth-child(6) {
     background-image: linear-gradient(
         to bottom,
         rgba(0, 0, 0, 0) 0%,
@@ -585,7 +598,7 @@ section {
     ), url('images/pic2.svg');
 }
 
-.services__card:nth-child(6) {
+.services__card:nth-child(7) {
     background-image: linear-gradient(
         to bottom,
         rgba(0, 0, 0, 0) 0%,
@@ -593,7 +606,7 @@ section {
     ), url(./images/pic3.png);
 }
 
-.services__card:nth-child(7) {
+.services__card:nth-child(8) {
     background-image: linear-gradient(
         to bottom,
         rgba(0, 0, 0, 0) 0%,
@@ -609,7 +622,7 @@ section {
     margin-left: 2rem;
 }
 
-.services__card:nth-child(8) {
+.services__card:nth-child(9) {
     background-image: linear-gradient(
         to bottom,
         rgba(0, 0, 0, 0) 0%,
@@ -621,7 +634,7 @@ section {
     position: relative;
 }
 
-.services__card:nth-child(9) {
+.services__card:nth-child(10) {
     background-image: linear-gradient(
         to bottom,
         rgba(0, 0, 0, 0) 0%,
