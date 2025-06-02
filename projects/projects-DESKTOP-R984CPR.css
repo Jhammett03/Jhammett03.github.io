@@ -522,7 +522,7 @@ section {
 }
 
 
-.services__card {
+.services__card{
     margin: 1rem;
     height: 525px;
     width: 400px;
@@ -531,13 +531,16 @@ section {
         to bottom,
         rgba(0, 0, 0, 0) 0%,
         rgba(17, 17, 17, 0.6) 100%
-    ), url(./images/Schmusic.png);
+    ), url('images/AI_Summarizer.jpg');
     background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: center 60px;
     position: relative;
     color: #fff;
     transition:all .2s ease-in-out;
+}
+
+.services__card:nth-child(1) {
+    background-color: #fff;
+    background-size: 100%;
 }
 
 .services__card:nth-child(2) {
@@ -545,8 +548,9 @@ section {
         to bottom,
         rgba(0, 0, 0, 0) 0%,
         rgba(17, 17, 17, 0.6) 100%
-    ), url(../images/OCTaxes-ss.png);
+    ), url('images/icon.png');
     background-size: cover;
+    background-position: center;
     position: relative;
     color: #fff;
     transition:all .2s ease-in-out;
@@ -556,11 +560,12 @@ section {
     background-image: linear-gradient(
         to bottom,
         rgba(0, 0, 0, 0) 0%,
-        rgba(56, 89, 139, 0.2) 100%
+        rgba(17, 17, 17, 0.6) 100%
     ), url('images/Djkstra-thumbnail.png');
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: center 60px; /* Shift the image down by 50px */
+    background-size: cover;
+    position: relative;
+    color: #fff;
+    transition:all .2s ease-in-out;
 }
 
 .services__card:nth-child(4) {
@@ -568,10 +573,32 @@ section {
         to bottom,
         rgba(0, 0, 0, 0) 0%,
         rgba(56, 89, 139, 0.2) 100%
-    ), url('images/pic2.svg');
+    ), url(../images/AAQZ.png);
+    background-repeat: no-repeat;
+    background-size: 135%;
+    background-position: center; /* Shift the image down by 50px */
 }
 
 .services__card:nth-child(5) {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(56, 89, 139, 0.2) 100%
+    ), url(../images/OCTaxes-ss.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center; /* Shift the image down by 50px */
+}
+
+.services__card:nth-child(6) {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(56, 89, 139, 0.2) 100%
+    ), url('images/pic2.svg');
+}
+
+.services__card:nth-child(7) {
     background-image: linear-gradient(
         to bottom,
         rgba(0, 0, 0, 0) 0%,
@@ -579,7 +606,7 @@ section {
     ), url(./images/pic3.png);
 }
 
-.services__card:nth-child(6) {
+.services__card:nth-child(8) {
     background-image: linear-gradient(
         to bottom,
         rgba(0, 0, 0, 0) 0%,
@@ -595,7 +622,7 @@ section {
     margin-left: 2rem;
 }
 
-.services__card:nth-child(7) {
+.services__card:nth-child(9) {
     background-image: linear-gradient(
         to bottom,
         rgba(0, 0, 0, 0) 0%,
@@ -607,7 +634,7 @@ section {
     position: relative;
 }
 
-.services__card:nth-child(8) {
+.services__card:nth-child(10) {
     background-image: linear-gradient(
         to bottom,
         rgba(0, 0, 0, 0) 0%,
