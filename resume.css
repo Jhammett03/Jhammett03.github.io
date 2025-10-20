@@ -326,14 +326,19 @@ main {
 .resume{
     animation: slideInUp;
     animation-duration: 2s;
+    width: 80%;
+    display: block;
+    justify-self: center;
 }
 
 img {
     animation: slideInDown;
     animation-duration: 2s;
     display: block;
-    scale: 75%;
+    width: 25%;
     margin: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
   }
   
 
@@ -645,4 +650,9 @@ main h3, ul {
   .slideInDown {
     animation-name: slideInLeft;
     animation-duration: 2s;
+  }
+
+  .course-list,
+.skill-list {
+    list-style-type: none;
   }
