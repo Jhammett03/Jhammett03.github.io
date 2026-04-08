@@ -504,68 +504,74 @@ section {
     background-position: center;
 }
 
-/* 5: Music Schmusic */
+/* 5: Systems Programming */
 .services__card:nth-child(5) {
+    background-image: linear-gradient(135deg, rgba(33,212,253,0.08) 0%, rgba(98,153,255,0.12) 100%);
+    background-color: #0a1a1f;
+}
+
+/* 6: Music Schmusic */
+.services__card:nth-child(6) {
     background-image: linear-gradient(to bottom, rgba(0,0,0,0.1) 0%, rgba(17,17,17,0.88) 100%), url('images/Schmusic.png');
     background-size: cover;
     background-position: center;
 }
 
-/* 6: Algorithm Visualizer */
-.services__card:nth-child(6) {
+/* 7: Algorithm Visualizer */
+.services__card:nth-child(7) {
     background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,0.6) 100%), url('images/Djkstra-thumbnail.png');
     background-size: cover;
     background-position: center;
 }
 
-/* 7: AAQZ Language */
-.services__card:nth-child(7) {
+/* 8: AAQZ Language */
+.services__card:nth-child(8) {
     background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(56,89,139,0.2) 100%), url('../images/AAQZ.png');
     background-repeat: no-repeat;
     background-size: 135%;
     background-position: center;
 }
 
-/* 8: Virtual World */
-.services__card:nth-child(8) {
+/* 9: Virtual World */
+.services__card:nth-child(9) {
     background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,0.6) 100%), url('./images/ghost.png');
     background-repeat: no-repeat;
     background-size: 60%;
     background-position: center;
 }
 
-/* 9: Degree Flowchart */
-.services__card:nth-child(9) {
+/* 10: Degree Flowchart */
+.services__card:nth-child(10) {
     background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,0.6) 100%), url('./images/pic3.png');
     background-size: cover;
     background-position: center;
 }
 
-/* 10: Accounting & Tax */
-.services__card:nth-child(10) {
+/* 11: Accounting & Tax */
+.services__card:nth-child(11) {
     background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(56,89,139,0.2) 100%), url('../images/OCTaxes-ss.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
-/* 11: Spotipy */
-.services__card:nth-child(11) {
+/* 12: Spotipy */
+.services__card:nth-child(12) {
     background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,0.6) 100%), url('./images/spotify.jpg');
     background-size: cover;
     background-position: center;
 }
 
-/* 12: YouTube Downloader */
-.services__card:nth-child(12) {
+/* 13: YouTube Downloader */
+.services__card:nth-child(13) {
     background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,0.6) 100%), url('./images/pytube.svg');
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
 }
 
-/* 13: Personal Website */
-.services__card:nth-child(13) {
+/* 14: Personal Website */
+.services__card:nth-child(14) {
     background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(56,89,139,0.2) 100%), url('images/pic2.svg');
     background-repeat: no-repeat;
     background-size: cover;

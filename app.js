@@ -32,7 +32,7 @@ const roles = [
     'AI/ML Engineer',
     'Full-Stack Developer',
     'Systems Programmer',
-    'RL Researcher'
+    'AI/ML Researcher'
 ];
 
 let roleIndex = 0;
