@@ -42,7 +42,7 @@ section {
 
 #navbar__logo {
     background-color: #6299ff;
-    background-image: linear-gradient(to top, #ffb199 100% );
+    background-image: linear-gradient(to top, #6299ff 0%, #21d4fd 100%);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -426,7 +426,7 @@ main h3, ul {
 
 #footer__logo {
     background-color: #6299ff;
-    background-image: linear-gradient(to top, #ffb199 100% );
+    background-image: linear-gradient(to top, #6299ff 0%, #21d4fd 100%);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;

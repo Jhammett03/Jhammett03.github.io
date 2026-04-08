@@ -38,7 +38,7 @@ html {
 
 #navbar__logo {
     background-color: #6299ff;
-    background-image: linear-gradient(to top, #ffb199 100% );
+    background-image: linear-gradient(to top, #6299ff 0%, #21d4fd 100%);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -139,7 +139,7 @@ html {
 
     .navbar__menu.active {
         background: #131313;
-        top: 150%;
+        top: 100%;
         opacity: 1;
         transition: all 0.5s ease;
         z-index: 99;
@@ -338,32 +338,27 @@ html {
 /* Mobile Responsive*/
 @media screen and (max-width: 768px) {
     .main__container {
-      display: grid;
-      grid-template-columns: auto;
+      display: flex;
+      flex-direction: column;
       align-items: center;
-      justify-self: center;
+      justify-content: center;
       width: 100%;
       margin: 0 auto;
-      height: 90vh;
+      height: auto;
+      padding: 2rem 1rem;
     }
-  
+
     .main__content {
       text-align: center;
-      margin-bottom: 4rem;
     }
-  
-    .main__content h1 {
-      font-size: 2.5rem;
-      margin-top: 2rem;
-    }
-  
+
     .main__content h2 {
-      font-size: 3rem;
+      font-size: 2.5rem;
     }
-  
+
     .main__content p {
-      margin-top: 1rem;
-      font-size: 1.5rem;
+      margin-top: 0.5rem;
+      font-size: 1.3rem;
     }
   }
   
@@ -515,27 +510,20 @@ html {
 }
 
 @media screen and (max-width: 960px) {
-    .services {
-        height: 1600px
-    }
-
-    .services h1 {
-        font-size: 2rem;
-        margin-top: 12rem;
+    .about__me {
+        padding: 1rem;
     }
 }
 
-@media screen and (max-width: 480px) {
-    .services {
-        height: auto;
+@media screen and (max-width: 600px) {
+    .personal, .education, .experience {
+        width: calc(100vw - 2rem);
+        max-width: 440px;
     }
 
-    .services h1 {
-        font-size: 1.2rem;
-    }
-
-    .services__card {
-        width: 400px;
+    .about__photo {
+        width: 220px;
+        height: 220px;
     }
 }
 
@@ -564,7 +552,7 @@ html {
 #footer__logo {
     margin-top: 100vh;
     background-color: #6299ff;
-    background-image: linear-gradient(to top, #ffb199 100% );
+    background-image: linear-gradient(to top, #6299ff 0%, #21d4fd 100%);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -758,7 +746,7 @@ html {
     align-self: center;
     font-size: 2rem;
     background-color: #6299ff;
-    background-image: linear-gradient(to top, #ffb199 100% );
+    background-image: linear-gradient(to top, #6299ff 0%, #21d4fd 100%);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -768,9 +756,33 @@ html {
   }
 
   .about__me p {
-    color: #fff;
-    max-width: 400px;
-    border-spacing: 10px ;
+    color: #d0d8e8;
+    max-width: 420px;
+    line-height: 1.7;
+    margin-bottom: 0.75rem;
+  }
+
+  .about__icon {
+    text-align: center;
+    padding: 1.5rem 0 0.5rem;
+  }
+
+  .about__photo {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid rgba(98, 153, 255, 0.4);
+    box-shadow: 0 0 50px rgba(98, 153, 255, 0.15);
+    display: block;
+    margin: 0 auto;
+  }
+
+  .about__icon--fa {
+    text-align: center;
+    padding: 2rem 0 0.5rem;
+    font-size: 5rem;
+    color: #6299ff;
   }
 
   @keyframes slideInLeft {

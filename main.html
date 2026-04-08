@@ -14,7 +14,7 @@
 <body>
     <nav class="navbar">
         <div class="navbar__container">
-            <a href="main.html" id="navbar__logo">&nbsp;<b>&nbsp;Jared Hammett</b></a>
+            <a href="main.html" id="navbar__logo"><i class="fa-solid fa-code"></i>&nbsp;<b>&nbsp;Jared Hammett</b></a>
             <div class="navbar__toggle" id="mobile-menu">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -51,12 +51,16 @@
       <div class="main__container">
         <div class="main__content">
           <h1>Jared Hammett</h1>
-          <h2>Software Engineering</h2>
-          <p>The Future of Tech</p>
+          <h2>Software Engineer</h2>
+          <p>AI/ML &middot; Full-Stack &middot; Systems</p>
+          <div class="hero__badges">
+              <span class="hero__badge"><i class="fa-solid fa-graduation-cap"></i>&nbsp;Cal Poly SLO '26</span>
+              <span class="hero__badge"><i class="fa-solid fa-location-dot"></i>&nbsp;San Luis Obispo, CA</span>
+          </div>
           <button class="main__btn"><a href="about/about.html">About Me</a></button>
         </div>
         <div class="main__img--container">
-          <img src="images/pic1.svg" alt="pic" id="main__img">
+          <img src="images/personal.jpeg" alt="Jared Hammett" id="main__img">
         </div>
       </div>
     </div>
@@ -67,14 +71,36 @@
     <div class="about">
         <div class="about-text">
     <h1>Introduction</h1>
-    <p>Hi, My Name is Jared Hammett, and I am a software engineer Passionate about <em>Front-End Development and Cybersecurity</em>. </p>
-    <p>What truly drives me is the opportunity to learn and grow. I have a passion for learning new things and I am always looking 
-        for opportunities to improve my skills!</p>
-    <p>I am currently in my third year at Cal Poly San Luis Obispo pursuing a B.S. in Computer Science with a minor in Accounting. At Cal Poly, I am an 
-        <strong>Instructional Student Aid</strong>
-        in low level computer science courses, as well as a member of the Cal Poly Triathlon Team. Outside of school, I work as a Web-Developer working on 
-        e-commerce platforms at Jannuzzi Consulting</p>
+    <p>Hi, I'm Jared — a software engineer focused on <em>AI/ML, full-stack development, and systems programming</em>.</p>
+    <p>I've built production features at <strong>WeGive</strong> (integrating Meilisearch and building an AI helpbot with MCP), developed e-commerce platforms at <strong>Jannuzzi Consulting</strong>, and serve as an <strong>Instructional Student Aid</strong> for CS courses at Cal Poly SLO.</p>
+    <p>Finishing my B.S. in Computer Science (minor in Accounting) at Cal Poly San Luis Obispo, graduating June 2026.</p>
         </div>
+</div>
+</section>
+
+    <!-- Skills Section -->
+<section class="hidden">
+<div class="skills">
+    <div class="skills__container">
+        <h1>Tech Stack</h1>
+        <div class="skills__grid">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">PyTorch</span>
+            <span class="skill-tag">scikit-learn</span>
+            <span class="skill-tag">MediaPipe</span>
+            <span class="skill-tag">NumPy / Pandas</span>
+            <span class="skill-tag">Reinforcement Learning</span>
+            <span class="skill-tag">C</span>
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">React</span>
+            <span class="skill-tag">Node.js</span>
+            <span class="skill-tag">SQL / MySQL</span>
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">OpenAI API</span>
+            <span class="skill-tag">AWS S3</span>
+        </div>
+    </div>
 </div>
 </section>
 
@@ -84,20 +110,26 @@
 <div class="services">
     <h1>Programming Solutions</h1>
     <div class="services__container">
-        <div  class="services__card hidden slideInRight">
+        <div class="services__card hidden slideInRight">
             <h2>Projects</h2>
-            <p>Check out my work</p>
-            <button><a href="projects/projects.html">Get Started</a></button>
+            <div class="card__bottom">
+                <p>Check out my work</p>
+                <button><a href="projects/projects.html">Get Started</a></button>
+            </div>
         </div>
         <div class="services__card hidden slideInRight">
             <h2>About Me</h2>
-            <p>Personal Background</p>
-            <button><a href="about/about.html">Get Started</a></button>
+            <div class="card__bottom">
+                <p>Personal Background</p>
+                <button><a href="about/about.html">Get Started</a></button>
+            </div>
         </div>
         <div class="services__card hidden slideInRight">
             <h2>Resume</h2>
-            <p>Work Experience</p>
-            <button><a href="resume.html">Get Started</a></button>
+            <div class="card__bottom">
+                <p>Work Experience</p>
+                <button><a href="resume.html">Get Started</a></button>
+            </div>
         </div>
     </div>
 </div>
