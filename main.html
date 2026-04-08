@@ -52,7 +52,7 @@
         <div class="main__content">
           <h1>Jared Hammett</h1>
           <h2>Software Engineer</h2>
-          <p>AI/ML &middot; Full-Stack &middot; Systems</p>
+          <p class="hero__typewriter"><span class="typewriter__text"></span><span class="typewriter__cursor">|</span></p>
           <div class="hero__badges">
               <span class="hero__badge"><i class="fa-solid fa-graduation-cap"></i>&nbsp;Cal Poly SLO '26</span>
               <span class="hero__badge"><i class="fa-solid fa-location-dot"></i>&nbsp;San Luis Obispo, CA</span>
@@ -60,7 +60,9 @@
           <button class="main__btn"><a href="about/about.html">About Me</a></button>
         </div>
         <div class="main__img--container">
-          <img src="images/personal.jpeg" alt="Jared Hammett" id="main__img">
+          <div class="photo__ring">
+            <img src="images/personal.jpeg" alt="Jared Hammett" id="main__img">
+          </div>
         </div>
       </div>
     </div>
@@ -75,6 +77,31 @@
     <p>I've built production features at <strong>WeGive</strong> (integrating Meilisearch and building an AI helpbot with MCP), developed e-commerce platforms at <strong>Jannuzzi Consulting</strong>, and serve as an <strong>Instructional Student Aid</strong> for CS courses at Cal Poly SLO.</p>
     <p>Finishing my B.S. in Computer Science (minor in Accounting) at Cal Poly San Luis Obispo, graduating June 2026.</p>
         </div>
+</div>
+</section>
+
+    <!-- Stats Row -->
+<section class="hidden">
+<div class="stats__row">
+    <div class="stat">
+        <span class="stat__number">2</span>
+        <span class="stat__label">Internships</span>
+    </div>
+    <div class="stat__divider"></div>
+    <div class="stat">
+        <span class="stat__number">13</span>
+        <span class="stat__label">Projects</span>
+    </div>
+    <div class="stat__divider"></div>
+    <div class="stat">
+        <span class="stat__number">4+</span>
+        <span class="stat__label">Years Coding</span>
+    </div>
+    <div class="stat__divider"></div>
+    <div class="stat">
+        <span class="stat__number">June '26</span>
+        <span class="stat__label">Graduating</span>
+    </div>
 </div>
 </section>
 
@@ -99,6 +126,45 @@
             <span class="skill-tag">Git</span>
             <span class="skill-tag">OpenAI API</span>
             <span class="skill-tag">AWS S3</span>
+        </div>
+    </div>
+</div>
+</section>
+
+    <!-- Currently Building -->
+<section class="hidden">
+<div class="building">
+    <div class="building__container">
+        <div class="building__label">
+            <span class="building__dot"></span>
+            Currently Building
+        </div>
+        <h2>Attention Tracker</h2>
+        <p>Senior project — a computer vision pipeline that classifies <strong>focused vs. distracted</strong> states from 10-second video clips. MediaPipe extracts 478 facial landmarks per frame at 3 fps; from these I engineer per-frame Eye Aspect Ratio (EAR) and eye-center coordinates, then compare four architectures on the same dataset using 5-fold stratified cross-validation.</p>
+        <div class="building__pipeline">
+            <span class="pipeline__step">Video (10s)</span>
+            <span class="pipeline__arrow">→</span>
+            <span class="pipeline__step">MediaPipe (478 landmarks)</span>
+            <span class="pipeline__arrow">→</span>
+            <span class="pipeline__step">EAR + gaze features</span>
+            <span class="pipeline__arrow">→</span>
+            <span class="pipeline__step">LR / 1D CNN / Transformer</span>
+            <span class="pipeline__arrow">→</span>
+            <span class="pipeline__step">Focused / Distracted</span>
+        </div>
+        <p class="building__apps">Applications: driver drowsiness detection, student engagement analysis, HCI research.</p>
+        <div class="building__footer">
+            <div class="building__tags">
+                <span class="skill-tag">MediaPipe</span>
+                <span class="skill-tag">PyTorch</span>
+                <span class="skill-tag">scikit-learn</span>
+                <span class="skill-tag">1D CNN</span>
+                <span class="skill-tag">Transformer</span>
+                <span class="skill-tag">OpenCV</span>
+            </div>
+            <a href="https://github.com/Jhammett03/Attention-Tracker" target="_blank" rel="noopener" class="building__link">
+                <i class="fa-brands fa-github"></i> View on GitHub
+            </a>
         </div>
     </div>
 </div>
@@ -131,6 +197,23 @@
                 <button><a href="resume.html">Get Started</a></button>
             </div>
         </div>
+    </div>
+</div>
+</section>
+
+<!-- GitHub Activity -->
+<section class="hidden">
+<div class="github__activity">
+    <div class="github__container">
+        <h1>GitHub Activity</h1>
+        <div class="github__cards">
+            <div class="github__card github__card--wide">
+                <img src="https://github-readme-activity-graph.vercel.app/graph?username=Jhammett03&bg_color=00000000&color=6299ff&line=21d4fd&point=ffffff&area=true&area_color=6299ff&hide_border=true" alt="Jared's contribution graph">
+            </div>
+        </div>
+        <a href="https://github.com/Jhammett03" target="_blank" rel="noopener" class="github__btn">
+            <i class="fa-brands fa-github"></i>&nbsp; View all repositories
+        </a>
     </div>
 </div>
 </section>

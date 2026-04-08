@@ -1,9 +1,9 @@
-<!DocType html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Jared's Website | Resume </title>
+        <title>Jared Hammett | Resume</title>
         <link rel="stylesheet" href="resume.css">
         <script src="https://kit.fontawesome.com/ab74e91db0.js" crossorigin="anonymous"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,9 +11,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
         <link rel="icon" type="image/x-icon" href="./images/icons8-code-16.png">
     </head>
-
-
-    <body>   
+    <body>
         <nav class="navbar">
             <div class="navbar__container">
                 <a href="main.html" id="navbar__logo"><i class="fa-solid fa-code"></i>&nbsp;<b>&nbsp;Jared Hammett</b></a>
@@ -24,190 +22,200 @@
                 </div>
                 <ul class="navbar__menu">
                     <li class="navbar__item">
-                        <a href="main.html" class="navbar__links">
-                            Home
-                        </a>
+                        <a href="main.html" class="navbar__links">Home</a>
                     </li>
                     <li class="navbar__item">
-                        <a href="about/about.html" class="navbar__links">
-                            About
-                        </a>
+                        <a href="about/about.html" class="navbar__links">About</a>
                     </li>
                     <li class="navbar__item">
-                        <a href="resume.html" class="navbar__links">
-                            Resume
-                        </a>
+                        <a href="resume.html" class="navbar__links">Resume</a>
                     </li>
                     <li class="navbar__btn">
-                        <a href="projects/projects.html" class="button">
-                            Projects
-                        </a>
+                        <a href="projects/projects.html" class="button">Projects</a>
                     </li>
                 </ul>
-            </div> 
-        </nav>
-        <main>
-            <h1 class="page-title">Resume</h1>
-            <img src="./images/undraw_resume_re_hkth.svg" alt="">
-            <button ><a href="Jared Hammett Resume.pdf" download ><h2 id="download">Download Resume!</h2></a></button>
-            <div class="resume">
-                
-                <section><h2 class="Education">Education</h2>
-                <div class="entry">
-                    <h3 class="entry-title">Bachelor of Science in Computer Science with a Minor in Accounting</h3>
-                    <p class="entry-info">California Polytechnic University, San Luis Obispo | Expected Graduation June 2026</p>
-                </div>
-                </section>
-                <section><h2 class="Experience">Experience<br><br></h2>
-                <div class="entry">
-                    <h3 class="entry-info">WeGive | Summer 2025</h3>
-                    <p class="entry-title">Full-Stack Software Engineering</p>
-                    <p class="entry-description">-Integrated Meilisearch into sitewide table queries, improving search responsiveness and scalability<br>
-                        -Developed an AI helpbot using Model Context Protocol (MCP) to analyze audit logs and assist users in resolving issues<br>
-                        -Expanded MailGun API integration with passthrough CRUD methods, giving users increased control over mailing lists<br>
-                        -Migrated HTML email templates to AWS S3, reducing relational database storage and improving maintainability.
-                        </p>
-                </div>
-                <div class="entry">
-                    <h3 class= "entry-info">Jannuzzi Consulting | Summer 2024 - Present</h3>
-                    <p class = "entry-title">Web Development/ Ecommerce Management</p>
-                    <p class="entry-description">- Developed Ecommerce platforms for clothing brands and tracked performace<br>- Developed python scripts for automating the organization of financial reports</p>
-                </div>
-                <div class="entry">
-                    <h3 class="entry-info">OCTaxes | Summer 2023</h3>
-                    <p class="entry-title">Web Development/ Bookkeeping</p>
-                    <p class="entry-description">- Built personal Portfolio Website <br>- Built Website for OCTaxes, a small accounting firm in my hometown</p>
-                </div>
-                <div class="entry">
-                    <h3 class="entry-info">California Polytechnic University - San Luis Obispo | Academic year 2023 - Present</h3>
-                    <p class="entry-title">Instructional Student Aid</p>                   
-                    <p class="entry-description">Lead study sessions and tutored students in fundamental Computer Science Courses including: <br> 
-                    <ul class="skill-list">
-                        <li>- Introduction to Computer Science</li>
-                        <li>- Data Structures and Algorithms</li>
-                        <li>- Discrete Mathematics</li>
-                        <li>- Design and Analysis of Algorithms</li>
-                    </ul>
-                </p>
-                </div>
-                </section>
-                <section><h2 class="Skills">Skills</h2>
-                <ul class="skill-list">
-                    <li>Python</li>
-                    <li>PyTorch</li>
-                    <li>scikit-learn</li>
-                    <li>MediaPipe</li>
-                    <li>NumPy / Pandas</li>
-                    <li>C</li>
-                    <li>Java</li>
-                    <li>JavaScript</li>
-                    <li>React</li>
-                    <li>Node.js</li>
-                    <li>SQL / MySQL</li>
-                    <li>Git</li>
-                    <li>Laravel</li>
-                    <li>Vue</li>
-                    <li>AWS S3</li>
-                    <li>OpenAI API</li>
-                </ul>
-                </section>
-                <section><h2 class="Projects">Projects</h2>
-                <div class="entry">
-                    <h3 class="entry-title">Focus / Distraction Classifier — Senior Project</h3>
-                    <p class="entry-info">Classifies focus vs. distraction from a 10-second video using facial landmark features extracted via MediaPipe</p>
-                    <p class="entry-description">- Compared four model architectures: Logistic Regression on time-series data, Logistic Regression on summary statistics, 1D CNN on feature vectors, and a Transformer<br>- Processed landmark sequences frame-by-frame; engineered aggregate features (mean, std, range) for the summary-stats pipeline</p>
-                </div>
-                <div class="entry">
-                    <h3 class="entry-title">Super Mario Bros Reinforcement Learning Agent</h3>
-                    <p class="entry-info">Trained a PPO agent to play Super Mario Bros using deep reinforcement learning</p>
-                    <p class="entry-description">- Implemented Proximal Policy Optimization (PPO) with custom reward shaping to encourage level progression<br>- Built and trained convolutional policy network in PyTorch using the gym-super-mario-bros environment</p>
-                </div>
-                <div class="entry">
-                    <h3 class="entry-title">AI Phishing Detector</h3>
-                    <p class="entry-info">Implemented a browser extension for detecting phishing attacks in Gmail</p>
-                    <p class="entry-description">- Trained model using Logistic Regression in scikit-learn for detecting potential phishing attacks and warning users</p>
-                </div>
-                <div class="entry">
-                    <h3 class="entry-title">AI Text Summarizer</h3>
-                    <p class="entry-info">Implemented a React app for summarizing text/PDF documents and generating comprehension questions</p>
-                    <p class="entry-description">- MERN stack application utilizing the OpenAI o3-mini API<br>- User authentication and MongoDB cluster allow for data persistence</p>
-                </div>
-                <div class="entry">
-                    <h3 class="entry-title">Personal Website</h3>
-                    <p class="entry-info">Designed and built personal portfolio website using HTML, CSS, and JavaScript</p>
-                    <p class="entry-description">- Implemented responsive multi-page site with scroll animations and mobile-first design</p>
-                </div>
-                <div class="entry">
-                    <h3 class="entry-title">Algorithm Visualizer</h3>
-                    <p class="entry-info">Designed and built a graph algorithm visualizer using JavaScript, HTML, and CSS</p>
-                    <p class="entry-description">- Implemented Dijkstra's, BFS, and DFS algorithms with step-by-step visual playback</p>
-                </div>
-                <div class="entry">
-                    <h3 class="entry-title">AAQZ Programming Language</h3>
-                    <p class="entry-info">Designed and implemented a functional programming language in Typed Racket</p>
-                    <p class="entry-description">- AAQZ is a fully parenthesized, functional programming language with emphasis on Lambda Calculus and Pattern Matching</p>
-                </div>
-                <div class="entry">
-                    <h3 class="entry-title">Spotipy Playlist Maker</h3>
-                    <p class="entry-info">Created playlist automator for Spotify using the Spotipy API</p>
-                    <p class="entry-description">- Automatically generates playlists by mood/vibe based on a provided artist, song, genre, or album</p>
-                </div>
-                <div class="entry">
-                    <h3 class="entry-title">OCTaxes Website</h3>
-                    <p class="entry-info">Designed and built a website using HTML and CSS for a local accounting firm</p>
-                    <p class="entry-description">- Implemented multiple pages with semantic HTML design and best practices for Git and GitHub</p>
-                </div>
-                </section>
-                <section><h2 class="Coursework">Coursework</h2>
-                <ul class="course-list">
-                    <li>Introduction to Computing</li>
-                    <li>Fundamentals of Computer Science</li>
-                    <li>Data Structures and Algorithms</li>
-                    <li>Project-Based Object-Oriented Programming and Design</li>
-                    <li>Introduction to Computer Organization</li>
-                    <li>Discrete Structures</li>
-                    <li>Systems Programming</li>
-                    <li>Design and Analysis of Algorithms</li>
-                    <li>Programming Languages</li>
-                    <li>Intro To Computer Security</li>
-                    <li>Intro to Database Systems</li>
-                    <li>Software Engineering</li>
-                    <li>Operating Systems</li>
-                    <li>Knowledge Discovery from Data</li>
-                    <li>Statistical Computing with R</li>
-                    <li>Dynamic Web Development</li>
-                </ul>
-                </section>
             </div>
-            
-            
+        </nav>
+
+        <main>
+            <div class="resume__page">
+
+                <!-- Header -->
+                <div class="resume__header">
+                    <h1>Jared Hammett</h1>
+                    <p class="resume__subtitle">Software Engineer &middot; AI/ML &middot; Full-Stack &middot; Systems</p>
+                    <div class="resume__header-links">
+                        <a href="mailto:jaredhammett452@gmail.com"><i class="fa-solid fa-envelope"></i> jaredhammett452@gmail.com</a>
+                        <a href="https://www.linkedin.com/in/jared-hammett-656250282/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin-in"></i> LinkedIn</a>
+                        <a href="https://github.com/Jhammett03" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub</a>
+                        <a href="Jared Hammett Resume.pdf" download class="resume__dl-btn"><i class="fa-solid fa-download"></i> Download PDF</a>
+                    </div>
+                </div>
+
+                <!-- Education -->
+                <section class="resume__section">
+                    <h2 class="resume__section-title">Education</h2>
+                    <div class="resume__entry">
+                        <div class="resume__entry-header">
+                            <span class="resume__org">California Polytechnic University, San Luis Obispo</span>
+                            <span class="resume__date">Expected June 2026</span>
+                        </div>
+                        <p class="resume__role">B.S. Computer Science &middot; Minor in Accounting</p>
+                    </div>
+                </section>
+
+                <!-- Experience -->
+                <section class="resume__section">
+                    <h2 class="resume__section-title">Experience</h2>
+
+                    <div class="resume__entry">
+                        <div class="resume__entry-header">
+                            <span class="resume__org">WeGive</span>
+                            <span class="resume__date">Summer 2025</span>
+                        </div>
+                        <p class="resume__role">Full-Stack Software Engineering Intern</p>
+                        <ul class="resume__bullets">
+                            <li>Integrated Meilisearch into sitewide table queries, improving search responsiveness and scalability</li>
+                            <li>Built an AI helpbot using Model Context Protocol (MCP) to analyze audit logs and surface issue resolutions</li>
+                            <li>Expanded MailGun API integration with passthrough CRUD methods for mailing list management</li>
+                            <li>Migrated HTML email templates to AWS S3, reducing database storage and improving maintainability</li>
+                        </ul>
+                    </div>
+
+                    <div class="resume__entry">
+                        <div class="resume__entry-header">
+                            <span class="resume__org">Jannuzzi Consulting</span>
+                            <span class="resume__date">Summer 2024 – Present</span>
+                        </div>
+                        <p class="resume__role">Web Development / E-Commerce Management</p>
+                        <ul class="resume__bullets">
+                            <li>Developed e-commerce platforms for clothing brands and tracked performance metrics</li>
+                            <li>Wrote Python scripts to automate organization and formatting of financial reports</li>
+                        </ul>
+                    </div>
+
+                    <div class="resume__entry">
+                        <div class="resume__entry-header">
+                            <span class="resume__org">Cal Poly SLO &mdash; Instructional Student Aid</span>
+                            <span class="resume__date">2023 – Present</span>
+                        </div>
+                        <p class="resume__role">Computer Science Department</p>
+                        <ul class="resume__bullets">
+                            <li>Lead study sessions and tutored students in Intro CS, Data Structures, Discrete Mathematics, and Algorithms</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- Skills -->
+                <section class="resume__section">
+                    <h2 class="resume__section-title">Skills</h2>
+                    <div class="resume__tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">PyTorch</span>
+                        <span class="skill-tag">scikit-learn</span>
+                        <span class="skill-tag">MediaPipe</span>
+                        <span class="skill-tag">NumPy / Pandas</span>
+                        <span class="skill-tag">Reinforcement Learning</span>
+                        <span class="skill-tag">C</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">SQL / MySQL</span>
+                        <span class="skill-tag">AWS S3</span>
+                        <span class="skill-tag">OpenAI API</span>
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">Laravel</span>
+                    </div>
+                </section>
+
+                <!-- Projects -->
+                <section class="resume__section">
+                    <h2 class="resume__section-title">Projects</h2>
+
+                    <div class="resume__entry">
+                        <div class="resume__entry-header">
+                            <span class="resume__org">Focus / Distraction Classifier</span>
+                            <span class="resume__date">Senior Project</span>
+                        </div>
+                        <p class="resume__role">Python &middot; MediaPipe &middot; PyTorch &middot; scikit-learn</p>
+                        <ul class="resume__bullets">
+                            <li>Classifies focused vs. distracted states from 10-second video clips using Eye Aspect Ratio and gaze features extracted via MediaPipe (478 facial landmarks at 3 fps)</li>
+                            <li>Benchmarked four architectures — Logistic Regression (summary stats), Logistic Regression (time-series), 1D CNN, and Transformer — using 5-fold stratified cross-validation on 96 labeled videos</li>
+                        </ul>
+                    </div>
+
+                    <div class="resume__entry">
+                        <div class="resume__entry-header">
+                            <span class="resume__org">Super Mario Bros RL Agent</span>
+                        </div>
+                        <p class="resume__role">Python &middot; PyTorch &middot; OpenAI Gym &middot; PPO</p>
+                        <ul class="resume__bullets">
+                            <li>Trained a PPO agent with custom reward shaping to play Super Mario Bros using a convolutional policy network built in PyTorch</li>
+                        </ul>
+                    </div>
+
+                    <div class="resume__entry">
+                        <div class="resume__entry-header">
+                            <span class="resume__org">AI Phishing Detector</span>
+                        </div>
+                        <p class="resume__role">Python &middot; scikit-learn &middot; NLTK &middot; BeautifulSoup</p>
+                        <ul class="resume__bullets">
+                            <li>Browser extension using a Logistic Regression classifier to detect phishing emails in Gmail in real time</li>
+                        </ul>
+                    </div>
+
+                    <div class="resume__entry">
+                        <div class="resume__entry-header">
+                            <span class="resume__org">AI Text Summarizer</span>
+                        </div>
+                        <p class="resume__role">React &middot; Node.js &middot; MongoDB &middot; OpenAI API</p>
+                        <ul class="resume__bullets">
+                            <li>MERN stack app that summarizes documents and generates comprehension questions via the OpenAI API</li>
+                            <li>User authentication and MongoDB persistence for saved summaries</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- Coursework -->
+                <section class="resume__section">
+                    <h2 class="resume__section-title">Relevant Coursework</h2>
+                    <div class="resume__tags">
+                        <span class="skill-tag">Data Structures &amp; Algorithms</span>
+                        <span class="skill-tag">Design &amp; Analysis of Algorithms</span>
+                        <span class="skill-tag">Systems Programming</span>
+                        <span class="skill-tag">Operating Systems</span>
+                        <span class="skill-tag">Knowledge Discovery from Data</span>
+                        <span class="skill-tag">Programming Languages</span>
+                        <span class="skill-tag">Software Engineering</span>
+                        <span class="skill-tag">Computer Organization</span>
+                        <span class="skill-tag">Intro to Computer Security</span>
+                        <span class="skill-tag">OOP &amp; Design Patterns</span>
+                    </div>
+                </section>
+
+            </div>
         </main>
-        <footer class="footer">
-            <!-- Footer Section-->
-<div class="footer__container">
-    <div class="footer__links">
-        <div class="footer__link--wrapper">
-            
-           <div class="footer__logo">
-            <a href="../main.html" id="footer__logo"><i class="fa-solid fa-code"></i>&nbsp;<b>&nbsp;Jared Hammett</b></a>
-            </div> 
-            
-            <div class="social__icons">
-                <div class="social__icon--link">
-                    <a id="email__logo" href="mailto:jaredhammett452@gmail.com" ><i id="email__logo" class="fa-solid fa-envelope"></i></a>
-                    <a href="https://www.linkedin.com/in/jared-hammett-656250282/"><i id="linkedin__logo"class="fa-brands fa-linkedin-in"></i></a>
-                    <a href="https://app.joinhandshake.com/stu/users/42955541"><i id="handshake__logo"class="fa-regular fa-handshake"></i></a>
-                    <a href="https://github.com/Jhammett03"><i id="github__logo"class="fa-brands fa-github"></i></a>
+
+        <!-- Footer -->
+        <div class="footer__container">
+            <div class="footer__links">
+                <div class="footer__link--wrapper">
+                    <div class="footer__logo">
+                        <a href="main.html" id="footer__logo"><i class="fa-solid fa-code"></i>&nbsp;<b>&nbsp;Jared Hammett</b></a>
+                    </div>
+                    <div class="social__icons">
+                        <div class="social__icon--link">
+                            <a href="mailto:jaredhammett452@gmail.com"><i id="email__logo" class="fa-solid fa-envelope"></i></a>
+                            <a href="https://www.linkedin.com/in/jared-hammett-656250282/"><i id="linkedin__logo" class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="https://app.joinhandshake.com/stu/users/42955541"><i id="handshake__logo" class="fa-regular fa-handshake"></i></a>
+                            <a href="https://github.com/Jhammett03"><i id="github__logo" class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    
-</div>
 
-    <script src="./app.js"></script>
-</body>
-            © 2023 Jared Hammett | All Rights Reserved
-        </footer>
+        <script src="./app.js"></script>
     </body>
 </html>

@@ -122,6 +122,26 @@ section {
     transition: all 0.3s ease;
 }
 
+.navbar__links.nav__active {
+    color: #6299ff;
+    position: relative;
+}
+
+.navbar__links.nav__active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 1rem;
+    right: 1rem;
+    height: 2px;
+    background: linear-gradient(to right, #6299ff, #21d4fd);
+    border-radius: 2px;
+}
+
+.button.nav__active {
+    background: #4837ff;
+}
+
 
 @media screen and (max-width: 960px) {
     .navbar__container {
@@ -444,148 +464,120 @@ section {
     margin: 1rem;
     height: 525px;
     width: 400px;
-    border-radius: 4px;
-    background-image: linear-gradient(
-        to bottom,
-        rgba(0, 0, 0, 0.1) 0%,
-        rgba(17, 17, 17, 0.88) 100%
-    ), url('images/Schmusic.png');
+    border-radius: 8px;
+    border: 1px solid rgba(98, 153, 255, 0.08);
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.1) 0%, rgba(17,17,17,0.88) 100%);
     background-size: cover;
     background-position: center;
     color: #fff;
-    transition: all .2s ease-in-out;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: 20px 24px;
 }
 
+/* 1: Focus Classifier */
+.services__card:nth-child(1) {
+    background-image: linear-gradient(135deg, rgba(33,212,253,0.15) 0%, rgba(98,153,255,0.18) 100%);
+    background-color: #0d1a28;
+}
+
+/* 2: Super Mario Bros RL */
 .services__card:nth-child(2) {
-    background-image: linear-gradient(
-        to bottom,
-        rgba(0, 0, 0, 0) 0%,
-        rgba(17, 17, 17, 0.6) 100%
-    ), url('images/AI_Summarizer.jpg');
-    background-color: #fff;
-    background-size: 100%;
-}
-
-.services__card:nth-child(3) {
-    background-image: linear-gradient(
-        to bottom,
-        rgba(0, 0, 0, 0) 0%,
-        rgba(17, 17, 17, 0.6) 100%
-    ), url('images/icon.png');
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    color: #fff;
-    transition:all .2s ease-in-out;
-}
-
-.services__card:nth-child(4) {
-    background-image: linear-gradient(
-        to bottom,
-        rgba(0, 0, 0, 0) 0%,
-        rgba(17, 17, 17, 0.6) 100%
-    ), url('images/Djkstra-thumbnail.png');
-    background-size: cover;
-    position: relative;
-    color: #fff;
-    transition:all .2s ease-in-out;
-}
-
-.services__card:nth-child(5) {
-    background-image: linear-gradient(
-        to bottom,
-        rgba(0, 0, 0, 0) 0%,
-        rgba(56, 89, 139, 0.2) 100%
-    ), url(../images/AAQZ.png);
-    background-repeat: no-repeat;
-    background-size: 135%;
-    background-position: center; /* Shift the image down by 50px */
-}
-
-.services__card:nth-child(6) {
-    background-image: linear-gradient(
-        to bottom,
-        rgba(0, 0, 0, 0) 0%,
-        rgba(56, 89, 139, 0.2) 100%
-    ), url(../images/OCTaxes-ss.png);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: center; /* Shift the image down by 50px */
-}
-
-.services__card:nth-child(7) {
-    background-image: linear-gradient(
-        to bottom,
-        rgba(0, 0, 0, 0) 0%,
-        rgba(56, 89, 139, 0.2) 100%
-    ), url('images/pic2.svg');
-}
-
-.services__card:nth-child(8) {
-    background-image: linear-gradient(
-        to bottom,
-        rgba(0, 0, 0, 0) 0%,
-        rgba(17, 17, 17, 0.6) 100%
-    ), url(./images/pic3.png);
-}
-
-.services__card:nth-child(9) {
-    background-image: linear-gradient(
-        to bottom,
-        rgba(0, 0, 0, 0) 0%,
-        rgba(17, 17, 17, 0.6) 100%
-    ), url(./images/spotify.jpg);
-    background-size: 202%;
-    background-position: center;
-    position: relative;
-}
-
-.services__card:nth-child(10) {
-    background-image: linear-gradient(
-        to bottom,
-        rgba(0, 0, 0, 0) 0%,
-        rgba(17, 17, 17, 0.6) 100%
-    ), url(./images/pytube.svg);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: center;
-    position: relative;
-}
-
-.services__card:nth-child(11) {
-    background-image: linear-gradient(
-        to bottom,
-        rgba(0, 0, 0, 0) 0%,
-        rgba(17, 17, 17, 0.6) 100%
-    ), url(./images/ghost.png);
-    background-repeat: no-repeat;
-    background-size: 60%;
-    background-position: center;
-    position: relative;
-}
-
-/* Super Mario Bros RL */
-.services__card:nth-child(12) {
-    background-image: linear-gradient(
-        135deg,
-        rgba(98, 153, 255, 0.18) 0%,
-        rgba(183, 33, 255, 0.18) 100%
-    );
+    background-image: linear-gradient(135deg, rgba(98,153,255,0.18) 0%, rgba(183,33,255,0.18) 100%);
     background-color: #111130;
 }
 
-/* Focus Classifier - Senior Project */
+/* 3: AI Phishing Detector */
+.services__card:nth-child(3) {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,0.7) 100%), url('images/icon.png');
+    background-size: cover;
+    background-position: center;
+}
+
+/* 4: AI Summarizer */
+.services__card:nth-child(4) {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.1) 0%, rgba(17,17,17,0.75) 100%), url('images/AI_Summarizer.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* 5: Music Schmusic */
+.services__card:nth-child(5) {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.1) 0%, rgba(17,17,17,0.88) 100%), url('images/Schmusic.png');
+    background-size: cover;
+    background-position: center;
+}
+
+/* 6: Algorithm Visualizer */
+.services__card:nth-child(6) {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,0.6) 100%), url('images/Djkstra-thumbnail.png');
+    background-size: cover;
+    background-position: center;
+}
+
+/* 7: AAQZ Language */
+.services__card:nth-child(7) {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(56,89,139,0.2) 100%), url('../images/AAQZ.png');
+    background-repeat: no-repeat;
+    background-size: 135%;
+    background-position: center;
+}
+
+/* 8: Virtual World */
+.services__card:nth-child(8) {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,0.6) 100%), url('./images/ghost.png');
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: center;
+}
+
+/* 9: Degree Flowchart */
+.services__card:nth-child(9) {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,0.6) 100%), url('./images/pic3.png');
+    background-size: cover;
+    background-position: center;
+}
+
+/* 10: Accounting & Tax */
+.services__card:nth-child(10) {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(56,89,139,0.2) 100%), url('../images/OCTaxes-ss.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* 11: Spotipy */
+.services__card:nth-child(11) {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,0.6) 100%), url('./images/spotify.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* 12: YouTube Downloader */
+.services__card:nth-child(12) {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,0.6) 100%), url('./images/pytube.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+
+/* 13: Personal Website */
 .services__card:nth-child(13) {
-    background-image: linear-gradient(
-        135deg,
-        rgba(33, 212, 253, 0.15) 0%,
-        rgba(98, 153, 255, 0.18) 100%
-    );
-    background-color: #0d1a28;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(56,89,139,0.2) 100%), url('images/pic2.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Hero icon for image-less cards */
+.card__hero-icon {
+    font-size: 3.5rem;
+    padding: 1rem 0 0.5rem;
+    opacity: 0.35;
+    color: #21d4fd;
 }
 
 /* Featured card highlight */
@@ -702,9 +694,10 @@ section {
     width: 100%;
 }
 .services__card:hover {
-    transform: scale(1.075);
-    transition: 0.2s ease-in;
+    transform: scale(1.04) translateY(-6px);
     cursor: pointer;
+    box-shadow: 0 16px 48px rgba(98, 153, 255, 0.2);
+    border-color: rgba(98, 153, 255, 0.45);
 }
 
 @media screen and (max-width: 960px) {

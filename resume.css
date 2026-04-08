@@ -122,6 +122,26 @@ section {
     transition: all 0.3s ease;
 }
 
+.navbar__links.nav__active {
+    color: #6299ff;
+    position: relative;
+}
+
+.navbar__links.nav__active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 1rem;
+    right: 1rem;
+    height: 2px;
+    background: linear-gradient(to right, #6299ff, #21d4fd);
+    border-radius: 2px;
+}
+
+.button.nav__active {
+    background: #4837ff;
+}
+
 
 @media screen and (max-width: 960px) {
     .navbar__container {
@@ -312,72 +332,162 @@ section {
     }
 }
 
-/* Hero Section CSS */
+/* ── Resume Page Layout ── */
 main {
-    margin: 0;
-    align-items: center; 
-    justify-content: center;
-    text-align: center;
-    background-color: #14141414;
+    background-color: #141414;
     width: 100%;
-
 }
 
-.resume{
-    animation: slideInUp;
-    animation-duration: 2s;
-    width: 80%;
-    display: block;
-    justify-self: center;
+.resume__page {
+    max-width: 860px;
+    margin: 2.5rem auto 4rem;
+    padding: 0 1.5rem;
 }
 
-img {
-    animation: slideInDown;
-    animation-duration: 2s;
-    display: block;
-    width: 25%;
-    margin: auto;
-    margin-top: 2%;
-    margin-bottom: 2%;
-  }
-  
+.resume__header {
+    text-align: center;
+    padding: 2rem 0 2.5rem;
+    border-bottom: 1px solid rgba(98, 153, 255, 0.15);
+    margin-bottom: 2.25rem;
+}
 
- .page-title {
-    animation: slideInDown;
-    animation-duration: 2s;
-    font-size: 3rem;
-    background-color: #6299ff;
-    background-image: linear-gradient(to top, #6299ff 0%, #21d4fd 100%);
-    background-size: 100%;
+.resume__header h1 {
+    font-size: 2.8rem;
+    background: linear-gradient(to top, #6299ff 0%, #21d4fd 100%);
     -webkit-background-clip: text;
-    -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
     -moz-text-fill-color: transparent;
+    margin-bottom: 0.4rem;
 }
 
- main a {
-    text-decoration:none ;
-    
+.resume__subtitle {
+    color: #888;
+    font-size: 1rem;
+    margin-bottom: 1.25rem;
 }
 
-main button {
+.resume__header-links {
+    display: flex;
     justify-content: center;
-    align-items: center;
+    gap: 1.25rem;
+    flex-wrap: wrap;
+}
+
+.resume__header-links a {
+    color: #6299ff;
     text-decoration: none;
-    margin-bottom:70px;
-    height: 75px;
-    width: 25%;
-    border: none;
-    outline: none;
-    border-radius: 4px;
-    background: #f77062;
+    font-size: 0.9rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    transition: color 0.2s;
+}
+
+.resume__header-links a:hover { color: #21d4fd; }
+
+.resume__dl-btn {
+    background: rgba(98, 153, 255, 0.12);
+    border: 1px solid rgba(98, 153, 255, 0.35);
+    padding: 6px 14px;
+    border-radius: 6px;
+}
+
+.resume__dl-btn:hover {
+    background: rgba(98, 153, 255, 0.25) !important;
+    color: #fff !important;
+}
+
+.resume__section {
+    margin-bottom: 2.25rem;
+}
+
+.resume__section-title {
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #6299ff;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid rgba(98, 153, 255, 0.18);
+}
+
+.resume__entry {
+    margin-bottom: 1.5rem;
+}
+
+.resume__entry:last-child { margin-bottom: 0; }
+
+.resume__entry-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 0.25rem;
+    margin-bottom: 0.2rem;
+}
+
+.resume__org {
+    font-size: 1rem;
+    font-weight: 700;
     color: #fff;
 }
 
-main button:hover {
-    background: #4837ff;
-    transition: all 0.3s ease;
-    cursor: pointer;
+.resume__date {
+    font-size: 0.82rem;
+    color: #888;
+}
+
+.resume__role {
+    font-size: 0.88rem;
+    color: #a8c4ff;
+    margin-bottom: 0.55rem;
+}
+
+.resume__bullets {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.resume__bullets li {
+    color: #c0cce0;
+    font-size: 0.88rem;
+    padding-left: 1.1em;
+    position: relative;
+    margin-bottom: 0.3rem;
+    line-height: 1.55;
+}
+
+.resume__bullets li::before {
+    content: '–';
+    position: absolute;
+    left: 0;
+    color: #6299ff;
+}
+
+.resume__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.skill-tag {
+    background: rgba(98, 153, 255, 0.1);
+    border: 1px solid rgba(98, 153, 255, 0.35);
+    color: #6299ff;
+    padding: 5px 14px;
+    border-radius: 20px;
+    font-size: 0.82rem;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 600px) {
+    .resume__page { padding: 0 1rem; margin-top: 1.5rem; }
+    .resume__header h1 { font-size: 2rem; }
+    .resume__entry-header { flex-direction: column; gap: 0; }
+    .resume__header-links { gap: 0.75rem; }
 }
 
 main h2 {
